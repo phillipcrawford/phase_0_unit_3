@@ -43,4 +43,5 @@ sqlite>
 <!-- Add your reflection here -->
 
 http://forum.codecall.net/topic/74634-how-do-i-install-sqlite-3-on-windows/
+http://zetcode.com/db/sqlite/datamanipulation/
 

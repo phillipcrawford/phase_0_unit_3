@@ -26,20 +26,31 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
-var average = averagr(p1)
-
-function averagr(p1){
-  for (int i = 0; i < p1.length; i++){
-    
+var average = function average(scores){
+  var sum = 0
+  for (var i = 0; i < scores.length; i++){
+    sum = sum + scores[i]    
   }
-
+  return sum/scores.length
 }
 
+var gradebook = new Object
+gradebook.Joseph = new Object
+gradebook.Susan = new Object
+gradebook.William = new Object
+gradebook.Elizabeth = new Object
+gradebook.Joseph.testScores = scores[0]
+gradebook.Susan.testScores = scores[1]
+gradebook.William.testScores = scores[2]
+gradebook.Elizabeth.testScores = scores[3]
 
+gradebook.addScore = function addScore(name, score){
+    gradebook[name].testScores.push(score);
+};
 
-
-
-
+gradebook.getAverage = function getAverage(name){
+  return average(gradebook[name].testScores)
+}
 // __________________________________________
 // Refactored Solution
 
@@ -54,7 +65,8 @@ function averagr(p1){
 // Reflect
 
 
-
+// I was rusty with javascript, getting back into required me to look over some of my
+// previous work
 
 
 

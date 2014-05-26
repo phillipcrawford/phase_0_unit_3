@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge [by myself]
 
 */
 
@@ -25,6 +25,15 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Write your code below.
+
+var average = averagr(p1)
+
+function averagr(p1){
+  for (int i = 0; i < p1.length; i++){
+    
+  }
+
+}
 
 
 
